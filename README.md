@@ -1,4 +1,4 @@
-[DEMO](https://yanagushlevskaya.github.io/InDevLab-test/)
+[DEMO](https://yanagushlevskaya.github.io/InDevLab-test/dist/)
 
 # Simple Boilerplate-starter
 ## Installation
