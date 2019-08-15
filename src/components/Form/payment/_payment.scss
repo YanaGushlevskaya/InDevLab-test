@@ -1,0 +1,88 @@
+.payment__heading {
+  &:before {
+    content: '5';
+  }
+}
+
+.payment__subtitle {
+  margin: 0 0 50px 0;
+}
+
+.payment__link {
+  text-decoration: underline;
+  &:hover {
+    color: $secondary-text;
+  }
+}
+
+.payment__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.payment__input {
+  background: #fff;
+  margin-right: 30px;
+  &::placeholder {
+    color: $primary-text;
+  }
+}
+
+.payment__input-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.payment__input-title {
+  text-transform: uppercase;
+  padding: 0 0 10px 10px;
+  @include font-size(13);
+  font-weight: 700;
+}
+
+.payment__input:valid + .payment__input-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/check-mark.svg);
+  width: 20px;
+  height: 20px;
+  right: 40px;
+  bottom: 10px;
+}
+
+#payment__input--card-number {
+  width: 350px;
+}
+
+#payment__input--card-date  {
+  width: 150px;
+}
+
+#payment__input--card-code {
+  width: 70px;
+}
+
+.payment__input:invalid + .payment__input-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/close.svg);
+  width: 20px;
+  height: 20px;
+  right: 40px;
+  bottom: 10px;
+}
+.payment__input-icon--card:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../img/visa.svg);
+  background-size: 35px;
+  width: 35px;
+  height: 30px;
+  right: 40px;
+  bottom: 8px;
+}

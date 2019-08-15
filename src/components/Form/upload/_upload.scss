@@ -1,0 +1,114 @@
+.upload__heading-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upload__heading {
+  padding-right: 10px;
+  &:before {
+    content: '1';
+  }
+}
+
+.upload__subtitle {
+  @include font-size(14);
+}
+
+#upload__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  z-index: -5;
+  width: 100px;
+}
+
+.upload__input-label:hover {
+  cursor: pointer;
+}
+
+.upload__input-label:before {
+  content: '\f382';
+}
+
+.upload__input-wrapper {
+  margin-bottom: 50px;
+}
+
+.upload__table {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid $border;
+  border-radius: 3px;
+  padding: 10px;
+  @include font-size(12);
+  /* thead {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    th:first-child {
+      width: 40%;
+    }
+    th:nth-child(2),
+    th:nth-child(3) {
+      width: 25%;
+    }
+    th:nth-child(4) {
+      width: 10%;
+      text-align: center;
+    }
+  } */
+  td,
+  th {
+    text-align: left;
+    padding: 5px 0;
+    &:last-child {
+      text-align: center;
+    }
+  }
+  th {
+    position: absolute;
+    left: 0;
+    width: 100px;
+  }
+  @include medium {
+    padding: 20px 40px;
+    @include font-size(14);
+  }
+}
+
+td,
+th {
+  width: 150px;
+}
+th {
+  position: absolute;
+  left: 0;
+  width: 100px;
+}
+.outer {
+  position: relative;
+}
+
+.inner {
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.remove-icon:hover {
+  cursor: pointer;
+  color: $secondary-text;
+}
+
+.upload__request-text {
+  color: #ff0000;
+}
+
+.file-icon {
+  padding-right: 10px;
+  @include font-size(16);
+}

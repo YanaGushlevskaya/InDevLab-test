@@ -1,0 +1,36 @@
+<section class="form__upload form-section">
+  <div class="upload__heading-wrapper">
+    <h2 class="upload__heading form-section__heading">
+      Upload your documents
+      <span class="upload__subtitle">(Doc, Docx, Text, PDF, Markdown)</span>
+    </h2>
+  </div>
+  <div class="upload__input-wrapper">
+    <input
+      type="file"
+      class="upload__input"
+      name="upload"
+      id="upload__input"
+      accept=".doc,.docx,.text,.pdf,.markdown"
+      required
+    />
+    <label for="upload__input" class="upload__input-label reset-input icon-element">
+      Upload a new file
+    </label>
+  </div>
+  <p class="upload__request-text">Please, upload your files.</p>
+  <div class="outer">
+    <div class="inner">
+      <table class="upload__table" hidden="hidden">
+        <tbody class="upload__table-body">
+            <tr>
+              <th>File name</th>
+              <td>File size</td>
+              <td>Number of words</td>
+              <td>Remove</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

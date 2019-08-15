@@ -1,0 +1,35 @@
+@import './header/header';
+@import './document-type/document-type';
+@import './upload/upload';
+@import './language/language';
+@import './tone/tone';
+@import './urgency/urgency';
+@import './payment/payment';
+@import './footer/footer';
+
+.container--form {
+  background: #fff;
+  border: 1px solid $secondary-text;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  @include medium {
+    margin-bottom: 70px;
+  }
+}
+
+.form__content {
+  width: 100%;
+  padding: 20px 40px;
+  @include medium {
+    padding: 40px 80px;
+  }
+  @include large {
+    padding: 80px 100px;
+  }
+}
+
+.form__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

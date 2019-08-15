@@ -1,0 +1,57 @@
+.form__tone {
+  width: 45%;
+}
+
+.tone__heading {
+  &:before {
+    content: '3';
+  }
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tone__input-label {
+  width: 240px;
+  height: 45px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+    border-color: $checked-input;
+  }
+}
+
+.tone__input-label--1::before {
+  content: '\f086';
+}
+
+.tone__input-label--2::before {
+  content: '\f0f2';
+}
+
+.tone__input-label--3::before {
+  content: '\f0a1';
+}
+
+.tone__input:checked + .tone__input-label {
+  border: 5px solid $checked-input;
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/check-mark.svg);
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 5;
+  }
+}

@@ -1,0 +1,49 @@
+.form__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order_submit-wrapper--footer {
+  flex-direction: row;
+}
+
+.footer__input-wrapper,
+.btn--footer:first-child {
+  margin-right: 30px;
+}
+
+.footer_link {
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+    color: $secondary-text;
+  }
+}
+
+.footer__input-checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid $border;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+}
+.footer__input-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__input:checked + .footer__input-label .footer__input-checkmark {
+  background-color: rgba($primary, 0.5);
+  &:before {
+    content: '\f00c';
+    position: absolute;
+    bottom: 0;
+    color: $secondary-text;
+    @include font-size(22);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity: 1;
+  }
+}

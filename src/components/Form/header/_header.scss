@@ -1,0 +1,143 @@
+.form__header {
+  display: flex;
+  flex-direction: column;
+  @include medium {
+    flex-direction: row;
+  }
+}
+
+.form__header-wrapper {
+  padding: 10px 25px 10px 30px;
+  border-bottom: 1px solid $border;
+  @include large {
+    padding: 20px 35px 20px 50px;
+  }
+}
+
+.order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid $border;
+  @include medium {
+    width: 70%;
+  }
+  @include large {
+    flex-direction: row;
+  }
+}
+
+.order_submit {
+  flex: 0;
+}
+
+.order_submit-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .btn {
+    max-width: 167px;
+  }
+}
+
+.order__btn--order {
+  margin-bottom: 10px;
+  background: $primary;
+  color: #fff;
+  border-color: #54aca9;
+  margin: 0 0 10px 0;
+  @include large {
+    margin-bottom: 20px;
+  }
+  @include extra {
+    margin-bottom: auto;
+  }
+}
+
+.order__btn--print {
+  background: $form-element-background;
+  color: $primary-text;
+}
+
+.order__information {
+  flex: 1;
+  align-items: center;
+  @include large {
+    padding-right: 40px;
+  }
+}
+
+.order__information-title,
+.contacts__title {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '\f328';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    left: -20px;
+  }
+}
+
+.order__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding: 0;
+}
+
+.order__list-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-width: 115px;
+  .item-title,
+  .item-content {
+    padding: 5px 10px 5px 0;
+  }
+  .item-title {
+    color: $secondary-text;
+    font-weight: 700;
+  }
+}
+.contacts {
+  width: 100%;
+  @include font-size(14);
+  @include medium {
+    width: 30%;
+  }
+}
+
+.contacts__title {
+  @include font-size(16);
+  &:before {
+    content: '\f1cd';
+    font-weight: 400;
+  }
+}
+
+.contacts__text {
+  line-height: 1.5;
+}
+
+.contacts__link {
+  display: inline-block;
+  color: $secondary-text;
+  margin-bottom: 5px;
+  &:first-child {
+    padding-right: 10px;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+.order__information-title,
+.item-title,
+.contacts__title {
+  text-transform: uppercase;
+}

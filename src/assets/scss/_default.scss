@@ -1,0 +1,150 @@
+@include normalize();
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $base-font;
+  @include font-size(16);
+  color: $primary-text;
+}
+
+.content {
+  flex: 1 0;
+  background: $page-background;
+}
+
+.container {
+  width: 100%;
+
+  @include small {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  @include medium {
+    width: 720px;
+  }
+
+  @include large {
+    width: 960px;
+  }
+
+  @include extra {
+    width: 1120px;
+  }
+}
+
+.reset-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reset-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $secondary-text;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: none;
+  border: 1px solid $primary-text;
+  border-radius: 3px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  min-width: 167px;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    background: #fff;
+    color: $primary;
+    transition: 0.5s;
+  }
+  @include medium {
+    padding: 15px 20px;
+  }
+}
+
+.form-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.form-section__heading {
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 40px;
+  @include font-size(22);
+  &:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secondary-text;
+    border-radius: 50%;
+    color: $secondary-text;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    left: -35px;
+    transform: translateY(-20%);
+  }
+  @include medium {
+    @include font-size(24);
+    margin-bottom: 70px;
+    &:before {
+      width: 40px;
+      height: 40px;
+      left: -50px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.reset-input,
+.reset-select {
+  background: $form-element-background;
+  color: $secondary-text;
+  border: 1px solid $border;
+  border-radius: 3px;
+  padding: 10px 40px;
+  @include placeholder {
+    color: $primary-text;
+  }
+}
+
+.hide-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.icon-element:before {
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 10px;
+  @include font-size(16);
+}

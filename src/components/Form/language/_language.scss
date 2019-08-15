@@ -1,0 +1,51 @@
+.language__heading:before {
+  content: '2';
+}
+
+.chosen-container-single .chosen-single,
+.chosen-container .chosen-drop {
+  width: 250px;
+  margin-left: 50px;
+}
+
+.chosen-container-single .chosen-single {
+  padding: 10px 40px;
+  height: auto;
+  text-align: center;
+  font-family: $base-font;
+  @include font-size(16);
+  border: 1px solid $border;
+  background: $form-element-background;
+  color: $secondary-text;
+  div {
+    border-left: 1px solid $border;
+    padding-left: 3px;
+    b {
+      background-position: 0px 10px;
+    }
+  }
+}
+
+.chosen-container-single .chosen-default {
+  color: $primary-text;
+}
+
+.chosen-container-single {
+  margin-bottom: 40px;
+}
+
+.language__select-wrapper {
+  position: relative;
+}
+
+.language__select-text {
+  position: absolute;
+  transform: translateY(100%);
+  text-transform: uppercase;
+  @include font-size(14);
+  text-align: right;
+}
+
+.language__select-text--right {
+  transform: translate(100%, 100%);
+}
