@@ -4,8 +4,11 @@
 
 .chosen-container-single .chosen-single,
 .chosen-container .chosen-drop {
-  width: 250px;
+  width: 200px;
   margin-left: 50px;
+  @include small {
+    width: 250px;
+  }
 }
 
 .chosen-container-single .chosen-single {

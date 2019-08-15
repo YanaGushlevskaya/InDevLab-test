@@ -30,6 +30,9 @@
 
 .form__content-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  @include large {
+    flex-direction: row;
+  }
 }

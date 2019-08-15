@@ -1,15 +1,29 @@
 .form__footer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  @include medium {
+      flex-direction: row;
+      justify-content: flex-end;
+  }
 }
 
-.order_submit-wrapper--footer {
-  flex-direction: row;
+.order__submit-wrapper--footer {
+    align-items: center;
+    justify-content: center;
+  @include medium {
+    flex-direction: row;
+  }
 }
 
-.footer__input-wrapper,
-.btn--footer:first-child {
+.footer__input-wrapper {
   margin-right: 30px;
+}
+
+.btn--footer:first-child {
+    @include medium {
+        margin: 0 30px 0 0;
+    }
 }
 
 .footer_link {
@@ -45,5 +59,12 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     opacity: 1;
+  }
+}
+
+.footer__text {
+  @include font-size(12);
+  @include medium {
+    @include font-size(14);
   }
 }

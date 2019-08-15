@@ -130,23 +130,20 @@
     </label>
   </div>
   <p class="upload__request-text">Please, upload your files.</p>
-  <div class="outer">
-    <div class="inner">
-      <table class="upload__table" hidden="hidden">
-        <tbody class="upload__table-body">
-            <tr>
-              <th>File name</th>
-              <td>File size</td>
-              <td>Number of words</td>
-              <td>Remove</td>
-            </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <table class="upload__table" hidden="hidden">
+    <thead>
+      <tr>
+        <th>File name</th>
+        <th>File size</th>
+        <th>Number of words</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody class="upload__table-body"></tbody>
+  </table>
 </section>
 
-      <!-- <section class="form__language form-section">
+      <section class="form__language form-section">
   <h2 class="language__heading form-section__heading">
     Choose your languages pairings
   </h2>
@@ -183,8 +180,8 @@
     </select>
   </div>
 </section>
- -->
-      <!-- <div class="form__content-wrapper">
+
+      <div class="form__content-wrapper">
         <section class="form__tone form-section">
   <h2 class="tone__heading form-section__heading">
     Select your desired tone
@@ -241,7 +238,7 @@
 </section>
 
       </div>
-      <!-- <section class="form__payment form-section">
+      <section class="form__payment form-section">
   <h2 class="payment__heading form-section__heading">
     Sign up and choose a payment method
   </h2>
@@ -265,7 +262,7 @@
       <div class="payment__input-icon"></div>
     </label>
   </div>
-  <div class="payment__input-wrapper">
+  <div class="payment__input-wrapper registrarion">
     <label for="payment__input--email" class="payment__input-label">
       <span class="payment__input-title">Email address</span>
       <input
@@ -294,7 +291,7 @@
       <div class="payment__input-icon"></div>
     </label>
   </div>
-  <div class="payment__input-wrapper">
+  <div class="payment__input-wrapper card">
     <label for="payment__input--card-number" class="payment__input-label">
       <span class="payment__input-title">Card number</span>
       <input
@@ -342,22 +339,22 @@
     </label>
   </div>
 </section>
- -->
+
 
       <section class="form__footer form-section">
   <div class="footer__input-wrapper">
     <input type="checkbox" class="footer__input hide-input" id="footer__input" name="terms-conditions" required />
     <label for="footer__input" class="footer__input-label">
       <span class="footer__input-checkmark"></span>
-      <p>I agree to the <a href="#" class="footer_link reset-link">Terms &#38; Conditions</a></p>
+      <p class="footer__text">I agree to the <a href="#" class="footer_link reset-link">Terms &#38; Conditions</a></p>
     </label>
   </div>
-  <div class="order_submit-wrapper order_submit-wrapper--footer">
+  <div class="order_submit-wrapper order__submit-wrapper--footer">
     <button type="submit" class="order__btn--order btn btn--footer">Place order</button>
     <button type="button" class="order__btn--print btn btn--footer">Print a quote</button>
   </div>
 </section>
- -->
+
     </section>
   </div>
 </form>

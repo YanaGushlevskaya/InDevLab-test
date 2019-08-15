@@ -1,5 +1,8 @@
 .form__tone {
-  width: 45%;
+  width: 100%;
+  @include large {
+    width: 45%;
+  }
 }
 
 .tone__heading {
