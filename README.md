@@ -1,7 +1,7 @@
+[DEMO](https://yanagushlevskaya.github.io/InDevLab-test/)
+
 # Simple Boilerplate-starter
-
 ## Installation
-
 ### Requirements
 
 - Node.js
