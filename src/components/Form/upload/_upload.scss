@@ -57,6 +57,11 @@
     th:nth-child(2),th:nth-child(3) {
       display: none;
     }
+    @include medium {
+      th:nth-child(2),th:nth-child(3) {
+        display: table-cell;
+      }
+    }
   }
   td,
   th {
