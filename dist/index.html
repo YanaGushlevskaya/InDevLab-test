@@ -87,21 +87,21 @@
   <ul class="document-type__list reset-list">
     <li class="document-type__item">
       <input class="document-type__input hide-input" id="input-website" type="radio" name="document-type" value="website" required/>
-      <label for="input-website" class="item-label">
+      <label for="input-website" class="item-label primary-border">
         <img src="img/web-page.png" alt="website" class="item-img" />
         <span>Website</span>
       </label>
     </li>
     <li class="document-type__item">
       <input class="document-type__input hide-input" id="input-documents" type="radio" name="document-type" value="documents" />
-      <label for="input-documents" class="item-label">
+      <label for="input-documents" class="item-label primary-border">
         <img src="img/document.png" alt="website" class="item-img" />
         <span>Documents</span>
       </label>
     </li>
     <li class="document-type__item">
       <input class="document-type__input hide-input" id="input-social" type="radio" name="document-type" value="social" />
-      <label for="input-social" class="item-label">
+      <label for="input-social" class="item-label primary-border">
         <img src="img/social.png" alt="website" class="item-img" />
         <span>Social account</span>
       </label>
@@ -119,7 +119,7 @@
   <div class="upload__input-wrapper">
     <input
       type="file"
-      class="upload__input"
+      class="upload__input hide-input"
       name="upload"
       id="upload__input"
       accept=".doc,.docx,.text,.pdf,.markdown"
@@ -195,15 +195,15 @@
       class="tone__input hide-input"
       required
     />
-    <label for="tone__input--friendly" class="tone__input-label reset-input icon-element tone__input-label--1"
+    <label for="tone__input--friendly" class="tone__input-label reset-input primary-border icon-element tone__input-label--1"
       >Friendly/Casual</label
     >
     <input type="radio" name="tone" value="corporate" id="tone__input--corporate" class="tone__input hide-input" />
-    <label for="tone__input--corporate" class="tone__input-label reset-input icon-element tone__input-label--2"
+    <label for="tone__input--corporate" class="tone__input-label reset-input primary-border icon-element tone__input-label--2"
       >Corporate/Pro</label
     >
     <input type="radio" name="tone" value="media" id="tone__input--media" class="tone__input hide-input" />
-    <label for="tone__input--media" class="tone__input-label reset-input icon-element tone__input-label--3"
+    <label for="tone__input--media" class="tone__input-label reset-input primary-border icon-element tone__input-label--3"
       >Media/Formal</label
     >
   </div>
@@ -214,7 +214,7 @@
     Tell us how urgent this work is
   </h2>
   <div class="urgency__input-wrapper">
-    <input type="range" class="urgency__input" id="urgency__input" min="0" max="2" step="1" />
+    <input type="range" class="urgency__input hide-input" id="urgency__input" min="0" max="2" step="1" />
     <label for="urgency__input" class="urgency__input-label">
       <span>I got time</span>
       <span>Average</span>
@@ -224,8 +224,8 @@
   <div class="urgency__input-description">
     <h4 class="input-description-title">Timeline info</h4>
     <p class="input-description-text">
-      With an <span class="urgency__input-value">average</span> timeline set up, our expert translator can take a reasonable
-      amount of time perfecting your translation.
+      With an <span class="urgency__input-value">average</span> timeline set up, our expert translator can take a
+      reasonable amount of time perfecting your translation.
     </p>
   </div>
 </section>
@@ -332,7 +332,6 @@
     </label>
   </div>
 </section>
-
 
       <section class="form__footer form-section">
   <div class="footer__input-wrapper">

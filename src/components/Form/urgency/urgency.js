@@ -14,7 +14,7 @@ function readJsonFile(file, callback) {
 }
 
 function getUrgencyType() {
-    const value = event.target.value;
+  const value = event.target.value;
   let urgencyType;
   let urgencyText;
 
@@ -23,21 +23,21 @@ function getUrgencyType() {
     const urgency = dataBase.urgencyType;
     const urgencyTexts = urgency[0];
     switch (value) {
-        case '0':
+      case '0':
         urgencyText = urgencyTexts.gotTime;
         urgencyType = 'I got time';
         break;
       case '1':
-          urgencyText = urgencyTexts.average;
-          urgencyType = 'Average';
-          break;
+        urgencyText = urgencyTexts.average;
+        urgencyType = 'Average';
+        break;
       case '2':
         urgencyText = urgencyTexts.yesterday;
         urgencyType = 'Yesterday';
         break;
     }
     createElement(urgencyType, urgencyText);
-});
+  });
 }
 
 function createElement(urgencyType, urgencyText) {

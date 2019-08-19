@@ -18,7 +18,6 @@
 }
 
 .urgency__input {
-  -webkit-appearance: none;
   width: 90%;
   height: 10px;
   border-radius: 5px;
@@ -36,6 +35,13 @@
     cursor: pointer;
     position: relative;
     z-index: 3;
+  }
+  &::-moz-range-thumb {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: $primary-input;
+    border: $primary-input;
   }
   &:before,
   &:after {

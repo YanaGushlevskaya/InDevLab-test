@@ -42,19 +42,3 @@
 .tone__input-label--3::before {
   content: '\f0a1';
 }
-
-.tone__input:checked + .tone__input-label {
-  border: 5px solid $checked-input;
-  &:after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../img/check-mark.svg);
-    top: 0;
-    right: 0;
-    transform: translate(50%, -50%);
-    z-index: 5;
-  }
-}
